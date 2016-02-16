@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>git-creative</title>
+</head>
+<!-- ng-app is an angular directive. it's the most important directive. without it, the app WILL NOT WORK -->
+<!-- the name "gitCreative has to match the name in app.js else we'll get an injection error." -->
+<body ng-app="gitCreative">
+  
+  <script src="bower_components/angular/angular.min.js" type="text/javascript"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+<!-- angular can evaluate expressions. to test if angular is working, below should evaluate to 2 in our browsers -->
+  {{1+1}}
+
+  <ui-view>
+</body>
+</html>
